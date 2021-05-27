@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">Registration</div>
+        <div class="content">
+            <form action="#">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">First Name </span>
+                        <input type="text" placeholder="Enter first name" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Last Name </span>
+                        <input type="text" placeholder="Enter last name" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Date of Birth  </span>
+                        <div class="col-sm-14">
+                            <div class='input-group date' id='datetimepicker1'>
+                                <input type='text' class="form-control" />
+                                <span class="input-group-addon">
+                                        <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Gender</span>
+                        <div class="col-sm-14">
+                            <select id="company" class="form-control">
+                                    <option>Select</option>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                    <option>Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">PinCode </span>
+                        <input type="number" placeholder="Enter PinCode" maxlength="5" required>
+                    </div>
+                    <div class=" input-box ">
+                        <span class="details ">Emergency contact number  </span>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Blood group </span>
+                        <div class="col-sm-14">
+                            <select id="company" class="form-control">
+                                    <option>Select</option>
+                                    <option>A+</option>
+                                    <option>A-</option>
+                                    <option>B+</option>
+                                    <option>B-</option>
+                                    <option>AB+</option>
+                                    <option>AB-</option>
+                                    <option>O+</option>
+                                    <option>O-</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Allergies </span>
+                        <div class="col-sm-14">
+                            <select id="company" class="form-control">
+                                    <option>Select</option>
+                                    <option>Cough</option>
+                                    <option>Headache</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Co-morbidities  </span>
+                        <div class="col-sm-14">
+                            <select id="company" class="form-control">
+                                    <option>Select</option>
+                                    <option>Cough</option>
+                                    <option>Headache</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="button ">
+                    <input type="submit " value="Register ">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript ">
+        $(function() {
+            $('#datetimepicker1').datetimepicker();
+        });
+    </script>
+</body>
+
+</html>
